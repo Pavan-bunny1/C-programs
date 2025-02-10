@@ -1,22 +1,21 @@
+//odd or even
 #include <stdio.h>
-
-int main() {
+main()
+{
     int num;
-    
     printf("Enter a number: ");
     scanf("%d", &num);
-
+    goto check_even_odd;
+    
     check_even_odd:
-        if (num % 2 == 0) {
+        if (num % 2 == 0)
+        {
             printf("%d is even.\n", num);
-            goto end;
-        } else {
-            printf("%d is odd.\n", num);
-            goto end;
         }
-
-    end:
-        return 0;
+        else
+        {
+            printf("%d is odd.\n", num);
+        }
 }
 
 
