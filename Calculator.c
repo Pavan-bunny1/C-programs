@@ -31,5 +31,42 @@ printf("%d%d%d",a,b,a%b);
 break;
 default:
 printf("invalid input");
+break;
+}
+}
+
+
+
+
+
+#include<stdio.h>
+Main()
+{
+char ch;
+int a,b;
+printf("enter your arthm operator");
+scanf("%c",&ch);
+printf("enter your 1st and 2nd values");
+scanf("%d%d",&a,&b);
+switch(ch)
+{
+case'+':
+printf("%d%d%d",a,b,a+b);
+break;
+case'-':
+printf("%d%d%d",a,b,a-b);
+break;
+case'*':
+printf("%d%d%d",a,b,a*b);
+break;
+case'/':
+printf("%d%d%d",a,b,a/b);
+break;
+case'%':
+printf("%d%d%d",a,b,a%b);
+break;
+default:
+printf("invalid input");
+break;
 }
 }
